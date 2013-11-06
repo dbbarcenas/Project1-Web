@@ -1,0 +1,52 @@
+/* Put your custom CSS here */
+.swipe {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+}
+.swipe-wrap {
+  overflow: hidden;
+  position: relative;
+}
+.swipe-wrap > div {
+  float:left;
+  width:100%;
+  position: relative;
+}
+
+#mySwipe1 div  img {
+  display:block;
+  height:200px;
+  width:300px;
+  margin-left:auto ; 
+  margin-right:auto ;
+  background: #fff;
+  border-radius: 3px;
+  border: 1px solid;
+  border-color: #E5E5E5 #D3D3D3 #B9C1C6;
+}
+
+#mySwipe2 div  img {
+  display:block;
+  height:200px;
+  width:300px;
+  margin-left:auto !important; 
+  margin-right:auto !important;
+  background: #fff;
+  border-radius: 3px;
+  border: 1px solid;
+  border-color: #E5E5E5 #D3D3D3 #B9C1C6;
+}
+
+.photo div img{
+	display:block;
+	margin-left:auto; 
+  margin-right:auto;
+  background: #fff;
+  border-radius: 3px;
+  border: 1px solid;
+  border-color: #E5E5E5 #D3D3D3 #B9C1C6;
+}
+
+
+

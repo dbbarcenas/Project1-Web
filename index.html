@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title></title>
+  <link rel="stylesheet" href="https://d10ajoocuyu32n.cloudfront.net/mobile/1.3.1/jquery.mobile-1.3.1.min.css">
+  
+  
+  <!-- Extra Codiqa features -->
+  <link rel="stylesheet" href="css/codiqa.ext.css">
+ 
+  
+  <!-- jQuery and jQuery Mobile -->
+  <script type='text/javascript' src="https://d10ajoocuyu32n.cloudfront.net/jquery-1.9.1.min.js"></script>
+  <script type='text/javascript' src="https://d10ajoocuyu32n.cloudfront.net/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+
+  <!-- Extra Codiqa features -->
+  <script src="https://d10ajoocuyu32n.cloudfront.net/codiqa.ext.js"></script>
+   
+
+
+</head>
+<body>
+<!-- Home -->
+<div data-role="page" id="homePage">
+    <div data-role="content">
+        <div style="width: 200px; height: 150px; position: relative;">
+            <img src="images/logo1.png" alt="image" style="position: absolute; top: 18%; left: 10%; margin-left: -16px; margin-top: -18px">
+        </div>
+        <div id="homeNav" data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#homePage" data-transition="fade" data-theme="" data-icon="home"
+                    class="ui-btn-active ui-state-persist">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#aboutPage" data-transition="fade" data-theme="" data-icon="info">
+                        About Me
+                    </a>
+                </li>
+                <li>
+                    <a href="#contactPage" data-transition="fade" data-theme="" data-icon="edit">
+                        Contact Me
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#servicePage" data-transition="fade" data-theme="" data-icon="plus">
+                        Services
+                    </a>
+                </li>
+                <li>
+                    <a href="#projectsPage" data-transition="fade" data-theme="" data-icon="star">
+                        Projects
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div id='mySwipe1' style='max-width:500px;margin:0 auto' class='swipe'>
+		  <div class='swipe-wrap'>
+			<div><a href="http://www.youtube.com/watch?v=a1Kpk28f-vY"><img src="images/pic1.png"></a></div>
+			<div><a href="https://github.com/dbbarcenas/assignment2_winApp/tree/master/assignment2_winApp"><img src="images/pic2.png"></a></div>
+			<div><a href="https://github.com/dbbarcenas/C-sharp/tree/master/Assignment1_DurwinB"><img src="images/pic3.png"></a></div>
+		  </div>
+		 
+  <div style='text-align:center;padding-top:20px;'>
+  
+  <button onclick='mySwipe1.prev()'>prev</button> 
+  <button onclick='mySwipe1.next()'>next</button>
+
+	</div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src='js/swipe.js'></script>
+<script>
+
+// pure JS
+var elem = document.getElementById('mySwipe1');
+window.mySwipe1 = Swipe(elem, {
+  // startSlide: 4,
+  // auto: 3000,
+  // continuous: true,
+  // disableScroll: true,
+  // stopPropagation: true,
+  // callback: function(index, element) {},
+  // transitionEnd: function(index, element) {}
+});
+
+// with jQuery
+// window.mySwipe1 = $('#mySwipe1').Swipe().data('Swipe');
+
+</script>
+
+</div>
+    </div>
+    <div id="footer" data-theme="b" data-role="footer" data-position="fixed">
+        <h3>
+            <p>&copy; 2013 Durwin Barcenas Foundation Group</p>
+        </h3>
+    </div>
+</div>
+	<!--End of Home-->
+	
+	
+	<!--About Page-->
+	<div data-role="page" id="aboutPage">
+    <div data-role="content">
+        <div data-theme="b" data-role="header">
+        <h3>
+            About Me
+        </h3>
+    </div> <!--End header-->
+        <div id="homeNav" data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#homePage" data-transition="fade" data-theme="" data-icon="home">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#aboutPage" data-transition="fade" data-theme="" data-icon="info"
+					class="ui-btn-active ui-state-persist">
+                        About Me
+                    </a>
+                </li>
+                <li>
+                    <a href="#contactPage" data-transition="fade" data-theme="" data-icon="edit">
+                        Contact Me
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#servicePage" data-transition="fade" data-theme="" data-icon="plus">
+                        Services
+                    </a>
+                </li>
+                <li>
+                    <a href="#projectsPage" data-transition="fade" data-theme="" data-icon="star">
+                        Projects
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="photo">
+            <img src="images/photo.jpg" >
+        </div>
+		<div>
+			<p>
+			I was born and raised for 13 years in Philippines of Cebu City, came to Canada at the age of 13, and is currently 21 years old this year. Going to Georgian College for a 3 year program Computer Programming Analyst, and I'm in my 3rd semester this September. My hobbies would be watching sports channel, playing computer games, and playing basketball.
+			</p>
+		</div>
+    </div>
+    <div id="footer" data-theme="b" data-role="footer" data-position="fixed">
+        <h3>
+            <p>&copy; 2013 Durwin Barcenas Foundation Group</p>
+        </h3>
+    </div>
+</div>
+<!--End of AboutPage-->
+
+<!--Contact-->
+<div data-role="page" id="contactPage">
+    <div data-role="content">
+        <div data-theme="b" data-role="header">
+        <h3>
+            Contact Me
+        </h3>
+    </div> <!--end of header-->
+        <div id="homeNav" data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#homePage" data-transition="fade" data-theme="" data-icon="home">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#aboutPage" data-transition="fade" data-theme="" data-icon="info"
+					>
+                        About Me
+                    </a>
+                </li>
+                <li>
+                    <a href="#contactPage" data-transition="fade" data-theme="" data-icon="edit"
+					class="ui-btn-active ui-state-persist">
+                        Contact Me
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#servicePage" data-transition="fade" data-theme="" data-icon="plus">
+                        Services
+                    </a>
+                </li>
+                <li>
+                    <a href="#projectsPage" data-transition="fade" data-theme="" data-icon="star">
+                        Projects
+                    </a>
+                </li>
+            </ul>
+        </div>
+       <div data-role="collapsible-set">
+            <div data-role="collapsible">
+                <h3>
+                    Email
+                </h3>
+				<p>dbbarcenas@gmail.com</p>
+            </div>
+            <div data-role="collapsible">
+                <h3>
+                    Phone Number
+                </h3>
+				<p>1(705)770-7306</p>
+            </div>
+			<div data-role="collapsible" >
+                <h3>
+                    Twitter
+                </h3>
+				<a href="https://twitter.com/dbbarcenas"><p>https://twitter.com/dbbarcenas</p></a>
+            </div>
+            <div data-role="collapsible">
+                <h3>
+                    Facebook
+                </h3>
+				<a href="https://www.facebook.com/durwin.barcenas"><p>https://www.facebook.com/durwin.barcenas</p><a>
+            </div>
+            <div data-role="collapsible" >
+                <h3>
+                    Twitter
+                </h3>
+				<a href="https://twitter.com/dbbarcenas"><p>https://twitter.com/dbbarcenas</p></a>
+            </div>
+			</div>
+        </div>
+		
+    </div>
+    <div id="footer" data-theme="b" data-role="footer" data-position="fixed">
+        <h3>
+            <p>&copy; 2013 Durwin Barcenas Foundation Group</p>
+        </h3>
+    </div>
+</div> <!--End of contact-->
+
+<!--Service Page-->
+	<div data-role="page" id="servicePage">
+    <div data-role="content">
+        <div data-theme="b" data-role="header">
+        <h3>
+            Services
+        </h3>
+    </div> <!--End header-->
+        <div id="homeNav" data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#homePage" data-transition="fade" data-theme="" data-icon="home">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#aboutPage" data-transition="fade" data-theme="" data-icon="info">
+                        About Me
+                    </a>
+                </li>
+                <li>
+                    <a href="#contactPage" data-transition="fade" data-theme="" data-icon="edit">
+                        Contact Me
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#servicePage" data-transition="fade" data-theme="" data-icon="plus"
+					class="ui-btn-active ui-state-persist">
+                        Services
+                    </a>
+                </li>
+                <li>
+                    <a href="#projectsPage" data-transition="fade" data-theme="" data-icon="star">
+                        Projects
+                    </a>
+                </li>
+            </ul>
+        </div>
+		 <div data-role="collapsible-set">
+            <div data-role="collapsible">
+                <h3>
+                    Web Development
+                </h3>
+				<p>I can create website using the following programming languages:</p>
+				<ul>
+					<li>HTML5</li>
+					<li>CSS3</li>
+					<li>PHP</li>
+					<li>JAVASCRIPT</li>
+					<li>JQUERY</li>
+				</ul>
+            </div>
+            <div data-role="collapsible">
+                <h3>
+                    Application Development
+                </h3>
+				<p>Can create Windows Applications using the following programming languages:</p>
+				<ul>
+					<li>C#</li>
+					<li>Java</li>
+				</ul>
+            </div>
+            <div data-role="collapsible">
+                <h3>
+                    Computer Support
+                </h3>
+				<p>Can support non-technical problems of a computer. Provide building computer 
+					from ground up.</p>
+            </div> 
+        </div>
+    </div>
+    <div id="footer" data-theme="b" data-role="footer" data-position="fixed">
+        <h3>
+            <p>&copy; 2013 Durwin Barcenas Foundation Group</p>
+        </h3>
+    </div>
+</div>	<!--End of service-->
+
+<!-- projects page -->
+<div data-role="page" id="projectsPage">
+    <div data-role="content">
+        <div data-theme="b" data-role="header">
+        <h3>
+            Projects
+        </h3>
+    </div> <!--End header-->
+        <div id="homeNav" data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#homePage" data-transition="fade" data-theme="" data-icon="home"  >
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#aboutPage" data-transition="fade" data-theme="" data-icon="info">
+                        About Me
+                    </a>
+                </li>
+                <li>
+                    <a href="#contactPage" data-transition="fade" data-theme="" data-icon="edit">
+                        Contact Me
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#servicePage" data-transition="fade" data-theme="" data-icon="plus">
+                        Services
+                    </a>
+                </li>
+                <li>
+                    <a href="#projectsPage" data-transition="fade" data-theme="" data-icon="star"
+					class="ui-btn-active ui-state-persist">
+                        Projects
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div id='mySwipe2' style='max-width:500px !important;margin:0 auto !important;' class='swipe'>
+		  <div class='swipe-wrap'>
+			<div><a href="http://www.youtube.com/watch?v=a1Kpk28f-vY"><img src="images/pic1.png"></a></div>
+			<div><a href="https://github.com/dbbarcenas/assignment2_winApp/tree/master/assignment2_winApp"><img src="images/pic2.png"></a></div>
+			<div><a href="https://github.com/dbbarcenas/C-sharp/tree/master/Assignment1_DurwinB"><img src="images/pic3.png"></a></div>
+		  </div>
+		
+  <div style='text-align:center !important;padding-top:20px !important;'>
+  
+  <button onclick='mySwipe2.prev()'>prev</button> 
+  <button onclick='mySwipe2.next()'>next</button>
+
+	</div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src='js/swipe.js'></script>
+<script>
+
+// pure JS
+var elem = document.getElementById('mySwipe2');
+window.mySwipe2 = Swipe(elem, {
+  // startSlide: 4,
+  // auto: 3000,
+  // continuous: true,
+  // disableScroll: true,
+  // stopPropagation: true,
+  // callback: function(index, element) {},
+  // transitionEnd: function(index, element) {}
+});
+
+// with jQuery
+// window.mySwipe2 = $('#mySwipe2').Swipe().data('Swipe');
+
+</script>
+
+</div>
+    </div>
+    <div id="footer" data-theme="b" data-role="footer" data-position="fixed">
+        <h3>
+            <p>&copy; 2013 Durwin Barcenas Foundation Group</p>
+        </h3>
+    </div>
+</div>
+	<!--end of projects -->
+
+
+</body>
+</html>
