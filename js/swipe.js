@@ -1,4 +1,6 @@
 /*
+ * Photoslider framework
+ * source: https://github.com/bradbirdsall/Swipe
  * Swipe 2.0
  *
  * Brad Birdsall
