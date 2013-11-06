@@ -1,3 +1,7 @@
+<!--Name: Durwin Barcenas
+	Date: November 1, 2013
+	version 1.0
+-->
 <!DOCTYPE html>
 <html>
 <head>
@@ -27,9 +31,11 @@
 <!-- Home -->
 <div data-role="page" id="homePage">
     <div data-role="content">
+	<!--LOGO-->
         <div style="width: 200px; height: 150px; position: relative;">
             <img src="images/logo1.png" alt="image" style="position: absolute; top: 18%; left: 10%; margin-left: -16px; margin-top: -18px">
         </div>
+		<!--END LOGO-->
         <div id="homeNav" data-role="navbar" data-iconpos="top">
             <ul>
                 <li>
@@ -64,7 +70,8 @@
                 </li>
             </ul>
         </div>
-        <div id='mySwipe1' style='max-width:500px;margin:0 auto' class='swipe'>
+		<!--Photo Slider 1-->
+        <div id='mySwipe1' style='max-width:500px;margin:0 auto;' class='swipe'>
 		  <div class='swipe-wrap'>
 			<div><a href="http://www.youtube.com/watch?v=a1Kpk28f-vY"><img src="images/pic1.png"></a></div>
 			<div><a href="https://github.com/dbbarcenas/assignment2_winApp/tree/master/assignment2_winApp"><img src="images/pic2.png"></a></div>
@@ -81,24 +88,15 @@
 <script src='js/swipe.js'></script>
 <script>
 
-// pure JS
+
 var elem = document.getElementById('mySwipe1');
 window.mySwipe1 = Swipe(elem, {
-  // startSlide: 4,
-  // auto: 3000,
-  // continuous: true,
-  // disableScroll: true,
-  // stopPropagation: true,
-  // callback: function(index, element) {},
-  // transitionEnd: function(index, element) {}
 });
-
-// with jQuery
-// window.mySwipe1 = $('#mySwipe1').Swipe().data('Swipe');
 
 </script>
 
 </div>
+<!--End of photo Slider-->
     </div>
     <div id="footer" data-theme="b" data-role="footer" data-position="fixed">
         <h3>
@@ -107,6 +105,9 @@ window.mySwipe1 = Swipe(elem, {
     </div>
 </div>
 	<!--End of Home-->
+	
+	
+	
 	
 	
 	<!--About Page-->
@@ -167,6 +168,11 @@ window.mySwipe1 = Swipe(elem, {
     </div>
 </div>
 <!--End of AboutPage-->
+
+
+
+
+
 
 <!--Contact-->
 <div data-role="page" id="contactPage">
@@ -253,6 +259,12 @@ window.mySwipe1 = Swipe(elem, {
     </div>
 </div> <!--End of contact-->
 
+
+
+
+
+
+
 <!--Service Page-->
 	<div data-role="page" id="servicePage">
     <div data-role="content">
@@ -335,6 +347,12 @@ window.mySwipe1 = Swipe(elem, {
     </div>
 </div>	<!--End of service-->
 
+
+
+
+
+
+
 <!-- projects page -->
 <div data-role="page" id="projectsPage">
     <div data-role="content">
@@ -377,6 +395,7 @@ window.mySwipe1 = Swipe(elem, {
                 </li>
             </ul>
         </div>
+		<!-- photo Slider 2-->
         <div id='mySwipe2' style='max-width:500px !important;margin:0 auto !important;' class='swipe'>
 		  <div class='swipe-wrap'>
 			<div><a href="http://www.youtube.com/watch?v=a1Kpk28f-vY"><img src="images/pic1.png"></a></div>
@@ -394,24 +413,16 @@ window.mySwipe1 = Swipe(elem, {
 <script src='js/swipe.js'></script>
 <script>
 
-// pure JS
+
 var elem = document.getElementById('mySwipe2');
 window.mySwipe2 = Swipe(elem, {
-  // startSlide: 4,
-  // auto: 3000,
-  // continuous: true,
-  // disableScroll: true,
-  // stopPropagation: true,
-  // callback: function(index, element) {},
-  // transitionEnd: function(index, element) {}
+  
 });
-
-// with jQuery
-// window.mySwipe2 = $('#mySwipe2').Swipe().data('Swipe');
 
 </script>
 
 </div>
+<!--End of photo Slider 2-->
     </div>
     <div id="footer" data-theme="b" data-role="footer" data-position="fixed">
         <h3>
